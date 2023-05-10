@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sibiro-three/static/css/main.073c9b0a.css",
+    "main.js": "/sibiro-three/static/js/main.37a0fe11.js",
+    "static/js/787.f704e224.chunk.js": "/sibiro-three/static/js/787.f704e224.chunk.js",
+    "static/media/logo.svg": "/sibiro-three/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sibiro-three/index.html",
+    "main.073c9b0a.css.map": "/sibiro-three/static/css/main.073c9b0a.css.map",
+    "main.37a0fe11.js.map": "/sibiro-three/static/js/main.37a0fe11.js.map",
+    "787.f704e224.chunk.js.map": "/sibiro-three/static/js/787.f704e224.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.37a0fe11.js"
+  ]
+}
