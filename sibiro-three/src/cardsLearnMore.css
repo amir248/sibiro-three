@@ -1,0 +1,27 @@
+learnmorecards{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  width:1440px;
+  max-width: 100%;
+}
+.iconLineOk{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:1440px;
+  max-width: 100%;
+  flex-wrap:wrap;
+  min-height: 360px;
+}
+.boxStyle{
+  display:flex;
+  background: rgb(255,247,255);
+  justify-content: space-around;
+  align-items: center;
+  width:calc(360px - 4px);
+  height:370px;
+  border:1px solid black;
+  flex-direction: column;
+}
