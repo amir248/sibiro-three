@@ -71,7 +71,7 @@ import Img64 from './gallery/one_13.jpg';
 import Img65 from './gallery/one_14.jpg';
 import Img66 from './gallery/one_15.jpg';
 import Img67 from './gallery/one_16.jpg';
-import Img68 from './gallery/one_17.jpg';
+// import Img68 from './gallery/one_17.jpg';
 const IMG=[{
     "count":"0",
     "alt":"Встраиваемая кухня",
@@ -470,7 +470,7 @@ const IMG=[{
 "title": "Кухни по индивидуальным проектам."
 },{
 "count":'66',
-"alt":"Кухни!",
+"alt":"Кухни под заказ",
 "src":Img67,
 "hash": "kitchen-ok",
 "title": "Кухни по индивидуальным проектам."
@@ -487,8 +487,11 @@ const onLd=()=>{
 
 
   const Clicker=()=>{
-    // console.log("FC Click");
+    // console.log("FC Click"+CountClick.one);
     CountClick.one++;
+    if(CountClick.one>=IMG.length){
+      CountClick.one=0;
+    }
     document.querySelector('#Photo').setAttribute('src',IMG[CountClick.one].src);
     // body > main > gallery > img:nth-child(5)
     // goList();
@@ -512,6 +515,9 @@ function galerey(){
   document.querySelector('#Photo').setAttribute('src',IMG[CountClick.one].src);
   document.querySelector('#Phot2').setAttribute('src',IMG[CountClick.two].src);
   document.querySelector('#Phot3').setAttribute('src',IMG[CountClick.three].src);
+  document.querySelector('body > main:nth-child(2) > gallery:nth-child(5) > p:nth-child(2)').innerHTML=
+  `${IMG[CountClick.one].title}`;
+
 }
 //
   const buttonS=()=>{

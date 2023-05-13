@@ -58,7 +58,7 @@ function Video() {
     return (
       <>
       <div id="viv" style={{display:'flex',justifyContent:"center",alignItems:"center",flexWrap:"wrap"}}>
-      <h2 style={{textAlign:"center",margin:"3px;",width:"100%"}} onClick={Vid}>Video<span style={{color:"green", fontSize:"15px",borderRadius:"10px",background:"rgba(255,0,0,0.3)",padding:"7px",textShadow:"1px 1px 1px black"}}>"onClick"</span></h2>
+      <h2 style={{textAlign:"center",margin:"3px;",width:"100%"}} onClick={Vid}>Video<span style={{color:"green", fontSize:"15px",borderRadius:"10px",background:"rgba(255,0,0,0.3)",padding:"7px",textShadow:"1px 1px 1px black"}}>"onClick - (Откроется при клике!)"</span></h2>
       </div>
       </>
     );
