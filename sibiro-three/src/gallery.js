@@ -415,63 +415,63 @@ const IMG=[{
 "hash": "closet_2",
 "title": "Встраиваемые шакафы"
 },{
-"count":'58',
+"count":'57',
 "alt":"Шкаф купе на заказ",
-"src":Img59,
+"src":Img58,
 "hash": "closet_3",
 "title": "Встраиваемые шакафы"
 },{
-"count":'59',
+"count":'58',
 "alt":"Кухни!",
-"src":Img60,
+"src":Img59,
 "hash": "kitchen-pro",
 "title": "Удобные кухни на заказ"
 },{
-"count":'60',
+"count":'59',
 "alt":"Кухни заказать",
-"src":Img61,
+"src":Img60,
 "hash": "kitchen-ind",
 "title": "Кухни по индивидуальным проектам."
 },{
-"count":'61',
+"count":'66',
 "alt":"Кухни на заказ",
-"src":Img62,
+"src":Img61,
 "hash": "kitchen-excellent",
 "title": "Удобная кухня под заказ"
 },{
-"count":'62',
+"count":'61',
 "alt":"Кухни купе на заказ",
-"src":Img63,
+"src":Img62,
 "hash": "closet_6",
 "title": "модульная кухня"
 },{
-"count":'63',
+"count":'62',
 "alt":"Любая корпусная мебель",
-"src":Img64,
+"src":Img63,
 "hash": "furniture",
 "title": "Встраиваемые модульные гарнитуры"
 },{
-"count":'64',
+"count":'63',
 "alt":"Модуль",
-"src":Img65,
+"src":Img64,
 "hash": "furniture-modul",
 "title": "удобные модули под пространство"
 },{
-"count":'65',
+"count":'64',
 "alt":"closet",
-"src":Img66,
+"src":Img65,
 "hash": "kloset-ind",
+"title": "Кухни по индивидуальным проектам."
+},{
+"count":'65',
+"alt":"Кухни!",
+"src":Img66,
+"hash": "kloset-ok",
 "title": "Кухни по индивидуальным проектам."
 },{
 "count":'66',
 "alt":"Кухни!",
 "src":Img67,
-"hash": "kloset-ok",
-"title": "Кухни по индивидуальным проектам."
-},{
-"count":'67',
-"alt":"Кухни!",
-"src":Img68,
 "hash": "kitchen-ok",
 "title": "Кухни по индивидуальным проектам."
 }];
@@ -486,52 +486,10 @@ const onLd=()=>{
 }
 
 
-// window.addEventListener('DOMContentLoaded',firstLoaded);
-// window.addEventListener('DOMContentLoaded',goList);
-// window.addEventListener("hashchange",goList);
-
-// for(let oy=0;oy<IMG.length;oy++){
-//   if(window.location.hash='#'+`${IMG[oy].count}`){
-//     console.log('couNT');
-//     localStorage.clickerOn=`${IMG[oy].count}`;
-//   }
-// }
-//   if(localStorage.clickerOn===undefined){
-//     firstLoaded();
-//     // console.log('undefined');
-//   }else{
-//     // localStorage.clickerOn=11;
-//     // console.log('eLse');
-//   }
-//   function firstLoaded(){
-//     for(let oY=0;oY<IMG.length;oY++){
-//       console.log('Yra!!!');
-//       // console.log(`${IMG[oY].count}`);
-//       if(window.location.hash=='#'+`${IMG[oY].hash}`){
-//         // console.log(`${IMG[oY].count}`+"____________");
-//         // console.log(`${IMG[oY].hash}`);
-//         localStorage.clickerOn=`${IMG[oY].count}`;
-//       }else if(window.location.hash===''){
-//         if(window.locatin=='#'+`${IMG[oY].hash}`){
-//           localStorage.clickerOn=`${IMG[oY].count}`;
-//         }else{
-//           // console.log('undefined ELSE');
-//           localStorage.clickerOn=`${IMG[oY].count}`;
-//         }
-//       }else{
-//
-//         // console.log('yV18');
-//       }
-//     }
-//   }
-//   // firstLoaded();
-//   // localStorage.clickerOn; // Вторая фотка
   const Clicker=()=>{
     // console.log("FC Click");
-    localStorage.clickerOn++;
-    if(localStorage.clickerOn>=IMG.length){
-      localStorage.clickerOn=0;
-    }
+    CountClick.one++;
+    document.querySelector('#Photo').setAttribute('src',IMG[CountClick.one].src);
     // body > main > gallery > img:nth-child(5)
     // goList();
     if(WIW){
@@ -542,51 +500,18 @@ const onLd=()=>{
       // }
     }
   }
-// if(localStorage.clickerOn===NaN){
-//   firstLoaded();
-// }
-//   function goList(){
-//     for(let Oj=0; Oj<IMG.length;Oj++){
-//
-//       if(localStorage.clickerOn==Oj){
-//         if(window.location.hash===''){
-//           // console.log('YNDEFINED');
-//         }else if(window.location.hash==='#first'){
-//           window.location.hash='#first';
-//         }else if(window.location.hash==='tel:+79137870404'){
-//           window.location.href='tel:+79137870404';
-//         }else if(window.location.hash==='#footer'){
-//           window.location.hash='#footer';
-//         }else if(window.location.hash=='#'+`${IMG[Oj].hash}`){
-//           // console.log('window.location.hash!@');
-//           window.location.hash=`${IMG[Oj].hash}`;
-//           localStorage.clickerOn=`${IMG[Oj].count}`;
-//           document.querySelector('body > main:nth-child(1) > gallery:nth-child(4) > p:nth-child(2)').innerHTML='<strong id='+`${IMG[Oj].hash}`+'>'+ `${IMG[Oj].title}`+'</strong>';
-//         }else{
-//           // console.log('est!@');
-//           window.location.hash='#'+`${IMG[localStorage.clickerOn].hash}`; // работает от function firstLoaded() O_o
-//           // firstLoaded();
-//         }
-//
-//         // console.log(localStorage.clickerOn);
-//         document.querySelector('#Photo').setAttribute('src', IMG[localStorage.clickerOn].src);
-//         document.querySelector('#Photo').setAttribute('alt', IMG[localStorage.clickerOn].alt);
-//         document.querySelector('#Photo').setAttribute('title', IMG[localStorage.clickerOn].title);
-//         document.querySelector('body > main:nth-child(1) > gallery:nth-child(4) > p:nth-child(2)').innerHTML='<strong id='+`${IMG[localStorage.clickerOn].hash}`+'>'+ `${IMG[localStorage.clickerOn].title}`+'</strong>';
-//         // window.location.hash=`${IMG[Oj].hahs}`;
-//       }else{
-//         // console.log('goList ELSE');
-//         if(localStorage.clickerOn>=IMG.length){
-//           localStorage.clickerOn=0;
-//         }
-//       }
-//     }
-//   }//goList();
-//
-const Cocl={
+
+const CountClick={
   one:0,
   two:1,
   three:2
+}
+function galerey(){
+
+
+  document.querySelector('#Photo').setAttribute('src',IMG[CountClick.one].src);
+  document.querySelector('#Phot2').setAttribute('src',IMG[CountClick.two].src);
+  document.querySelector('#Phot3').setAttribute('src',IMG[CountClick.three].src);
 }
 //
   const buttonS=()=>{
@@ -598,117 +523,57 @@ const Cocl={
       // window.addEventListener('hashchange',refactoring);
     }
   }
-//   function refactoring(){
-//     for(let ref=0;ref<=IMG.length;ref++){
-//       if(window.location.hash==='#'+`${IMG[localStorage.clickerOn].hash}`){
-//         // console.log(ref);
-//         window.location.hash=`${IMG[localStorage.clickerOn].hash}`;
-//         localStorage.clickerOn=`${IMG[localStorage.clickerOn].count}`;
-//
-//         document.querySelector('#Photo').setAttribute('src', IMG[localStorage.clickerOn-(1)].src);
-//         document.querySelector('#Photo').setAttribute('alt', IMG[localStorage.clickerOn-(1)].alt);
-//         document.querySelector('#Photo').setAttribute('title', IMG[localStorage.clickerOn-(1)].title);
-//
-//         document.querySelector('#Phot2').setAttribute('src', IMG[localStorage.clickerOn].src);
-//         document.querySelector('#Phot2').setAttribute('alt', IMG[localStorage.clickerOn].alt);
-//         document.querySelector('#Phot2').setAttribute('title', IMG[localStorage.clickerOn].title);
-//         document.querySelector('body > main:nth-child(1) > gallery:nth-child(4) > p:nth-child(2)').innerHTML='<strong id='+`${IMG[localStorage.clickerOn].hash}`+'>'+ `${IMG[localStorage.clickerOn].title}`+'</strong>';
-//
-//         document.querySelector('#Phot3').setAttribute('src', IMG[localStorage.clickerOn[+1]].src);
-//         document.querySelector('#Phot3').setAttribute('alt', IMG[localStorage.clickerOn[+1]].alt);
-//         document.querySelector('#Phot3').setAttribute('title', IMG[localStorage.clickerOn[+1]].title);
-//       }
-//     }
-//   }
-//   function countClickLocalStorage(){
-//     if(localStorage.clickerOn>=IMG.length){
-//       localStorage.clickerOn=0;
-//     }else if(localStorage.clickerOn<=0){
-//       localStorage.clickerOn=IMG.length;
-//       // if(localStorage.clickerOn<=+1){
-//       //   localStorage.clickerOn=IMG.length;
-//       // }
-//     }else{
-//       // console.log('Else countClickLocalStorage');
-//     }
-//   }
-//
+
   const butL=()=>{
-    console.log('Left');
-    // localStorage.clickerOn--;
-    // countClickLocalStorage();
-// refactoring();
-    //
-    // Cocl.one--;
-    // Cocl.two--;
-    // Cocl.three--;
-    // if(Cocl.one===0||Cocl.one===-1){
-    //   Cocl.one=IMG.length-1;
-    // }else if(Cocl.two===0||Cocl.two===-1){
-    //   Cocl.two=IMG.length-1;
-    // }else if(Cocl.three===0||Cocl.three===-1){
-    //   Cocl.three=IMG.length-1;
-    // }
-//     // goList();
-//
-//     // console.log(Cocl.one+" "+Cocl.two+" "+Cocl.three+" "+IMG.length);
-//     document.querySelector('#Photo').setAttribute('src', IMG[localStorage.clickerOn-(1)].src);
-//     document.querySelector('#Photo').setAttribute('alt', IMG[localStorage.clickerOn-(1)].alt);
-//     document.querySelector('#Photo').setAttribute('title', IMG[localStorage.clickerOn-(1)].title);
-//
-//     document.querySelector('#Phot2').setAttribute('src', IMG[localStorage.clickerOn].src);
-//     document.querySelector('#Phot2').setAttribute('alt', IMG[localStorage.clickerOn].alt);
-//     document.querySelector('#Phot2').setAttribute('title', IMG[localStorage.clickerOn].title);
-//         document.querySelector('body > main:nth-child(1) > gallery:nth-child(4) > p:nth-child(2)').innerHTML='<strong id='+`${IMG[localStorage.clickerOn].hash}`+'>'+ `${IMG[localStorage.clickerOn].title}`+'</strong>';
-//         window.location.hash=`${IMG[localStorage.clickerOn].hash}`;
-//         localStorage.clickerOn=`${IMG[localStorage.clickerOn].count}`;
-//
-//     document.querySelector('#Phot3').setAttribute('src', IMG[localStorage.clickerOn[+1]].src);
-//     document.querySelector('#Phot3').setAttribute('alt', IMG[localStorage.clickerOn[+1]].alt);
-//     document.querySelector('#Phot3').setAttribute('title', IMG[localStorage.clickerOn[+1]].title);
+    if(CountClick.one===0){
+      CountClick.one=IMG.length;
+    }
+    if(CountClick.two===0){
+      CountClick.two=IMG.length;
+    }
+    if(CountClick.three===0){
+      CountClick.three=IMG.length;
+    }
+    CountClick.one--;
+    CountClick.two--;
+    CountClick.three--;
+
+    galerey();
+
   }
   const butR=()=>{
-    console.log('Right');
-//     localStorage.clickerOn++;
-//     // countClickLocalStorage();
-// // refactoring();
-//     Cocl.one++;
-//     Cocl.two++;
-//     Cocl.three++;
-//     // console.log(Cocl.one+" "+Cocl.two+" "+Cocl.three+" "+IMG.length);
-//
-//     if(Cocl.three===IMG.length||Cocl.three>IMG.length){
-//       Cocl.three=0;
-//     }else if(Cocl.two===IMG.length||Cocl.two>IMG.length){
-//       Cocl.two=0;
-//     }else if(Cocl.one===IMG.length||Cocl.one>IMG.length){
-//       Cocl.one=0;
+    CountClick.one++;
+    CountClick.two++;
+    CountClick.three++;
+    if(CountClick.one===IMG.length){
+      CountClick.one=0;
     }
-//     document.querySelector('#Photo').setAttribute('src', IMG[localStorage.clickerOn-(1)].src);
-//     document.querySelector('#Photo').setAttribute('alt', IMG[localStorage.clickerOn-(1)].alt);
-//     document.querySelector('#Photo').setAttribute('title', IMG[localStorage.clickerOn-(1)].title);
-//
-//     document.querySelector('#Phot2').setAttribute('src', IMG[localStorage.clickerOn].src);
-//     document.querySelector('#Phot2').setAttribute('alt', IMG[localStorage.clickerOn].alt);
-//     document.querySelector('#Phot2').setAttribute('title', IMG[localStorage.clickerOn].title);
-//         document.querySelector('body > main:nth-child(1) > gallery:nth-child(4) > p:nth-child(2)').innerHTML='<strong id='+`${IMG[localStorage.clickerOn].hash}`+'>'+ `${IMG[localStorage.clickerOn].title}`+'</strong>';
-//         localStorage.clickerOn=`${IMG[localStorage.clickerOn].count}`;
-//
-//
-//     document.querySelector('#Phot3').setAttribute('src', IMG[localStorage.clickerOn[+1]].src);
-//     document.querySelector('#Phot3').setAttribute('alt', IMG[localStorage.clickerOn[+1]].alt);
-//     document.querySelector('#Phot3').setAttribute('title', IMG[localStorage.clickerOn[+1]].title);
-  // }
+    if(CountClick.two===IMG.length){
+      CountClick.two=0;
+    }
+    if(CountClick.three===IMG.length){
+      CountClick.three=0;
+    }
+
+    galerey();
+
+    }
+
+
 function Gallery(){
 
     return (
       <>
       <h1 id="gallery" style={{width:"100%",textAlign:"center"}}>Фотографии</h1>
       <p style={{width:"100%",textAlign:"center"}}>Установленной корпусной мебели на заказ, в домах довольных заказчиков.</p>
+
       <span id="butL" onClick={butL}></span>
-      <img src={IMG[Cocl.one].src} alt={IMG[Cocl.one].alt} title={IMG[Cocl.one].title} onLoad={onLd} onClick={Clicker} id="Photo"/>
-      <img src={IMG[Cocl.two].src} alt={IMG[Cocl.two].alt} title={IMG[Cocl.two].title} id="Phot2"onLoad={buttonS}/>
-      <img src={IMG[Cocl.three].src} alt={IMG[Cocl.three].alt} title={IMG[Cocl.three].title} id="Phot3"/>
+      <img src={IMG[CountClick.one].src} alt={IMG[CountClick.one].alt} title={IMG[CountClick.one].title} onLoad={onLd} onClick={Clicker} id="Photo"/>
+
+      <img src={IMG[CountClick.two].src} alt={IMG[CountClick.two].alt} title={IMG[CountClick.two].title} id="Phot2"onLoad={buttonS}/>
+
+      <img src={IMG[CountClick.three].src} alt={IMG[CountClick.three].alt} title={IMG[CountClick.three].title} id="Phot3"/>
+
       <span id="butR" onClick={butR}></span>
       </>
     );

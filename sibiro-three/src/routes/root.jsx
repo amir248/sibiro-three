@@ -1,3 +1,4 @@
+import './style.css';
 export default function Root() {
   return (
     <>
@@ -29,10 +30,10 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <a href={`/sibiro-three/contacts`}>Your Name</a>
+              <a href={`/kitchen`}>Your Name</a>
             </li>
             <li>
-              <a href={`/sibiro-three/contacts/2`}>Your Friend</a>
+              <a href={`/sibiro-three/`}>Your Friend</a>
             </li>
           </ul>
         </nav>

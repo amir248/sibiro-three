@@ -15,6 +15,10 @@ import ThreeOpenCard from './cards/threeOpenCard';
 import FourOpenCard from './cards/fourOpenCard';
 import FiveOpenCard from './cards/fiveOpenCard';
 
+
+
+
+
 const windOne=()=>{
   if(window.innerWidth>1210){
     let append= document.querySelector('div.cart:nth-child(2) > img:nth-child(1)');
@@ -51,6 +55,7 @@ function Article(){
           <p>Для кухни важно ежедневный комфорт. Вместительная и функциональная кухня по неповторимому дизайну.</p>
           <Kitchen />
 
+
           <strong style={{padding: "3%", background: "rgba(255, 255, 255, 0.3)", borderRadius: "10px", fontSize: "14px", marginTop: "30%", marginBottom: "15%"}}>Заказать <a href="tel:+79137870404" style={{color:"maroon"}}>+79137870404</a> </strong>
         </div>
       </div>
@@ -60,6 +65,9 @@ function Article(){
         <h3>Модули с уникальными размерами.</h3>
           <p>Корпусная мебель по индивидуальным размерам: кухни, шкафы купе, прихожие, гостиные, детские и многое другое...</p>
           <TwoOpenCard/>
+
+
+
             <strong style={{padding: "3%", background: "rgba(255, 255, 255, 0.3)", borderRadius: "10px", fontSize: "14px", marginTop: "30%", marginBottom: "15%"}}>Заказать <a href="tel:+79137870404" style={{color:"maroon"}}>+79137870404</a> </strong>
         </div>
       </div>
@@ -69,6 +77,9 @@ function Article(){
           <h3>Торговое оборудование</h3>
           <p>Барные стойки, ресепшены, витрины.</p>
           <ThreeOpenCard/>
+
+
+
           <strong style={{padding: "3%", background: "rgba(255, 255, 255, 0.3)", borderRadius: "10px", fontSize: "14px", marginTop: "30%", marginBottom: "15%"}}>Заказать <a href="tel:+79137870404" style={{color:"maroon"}}>+79137870404</a> </strong>
         </div>
       </div>
@@ -78,6 +89,9 @@ function Article(){
           <h3>Прихожие</h3>
           <p>Современные модели оригинальных, эргономичных, максимально лаконичных гарнитуров для прихожей. По персональным размерам.</p>
           <FourOpenCard/>
+
+
+
           <strong style={{padding: "3%", background: "rgba(255, 255, 255, 0.3)", borderRadius: "10px", fontSize: "14px", marginTop: "30%", marginBottom: "15%"}}>Заказать <a href="tel:+79137870404" style={{color:"maroon"}}>+79137870404</a> </strong>
         </div>
       </div>
@@ -88,6 +102,9 @@ function Article(){
             <strong>От: 19 000 руб.</strong>
             <p>Мебель по индивидуальным размерам, авторский дизайн разработаный в гармонии интерьера. Пространство квартиры используется максимально эффиктивно.</p>
             <FiveOpenCard/>
+
+
+
             <strong style={{padding: "3%", background: "rgba(255, 255, 255, 0.3)", borderRadius: "10px", fontSize: "14px", marginTop: "30%", marginBottom: "15%"}}>Заказать <a href="tel:+79137870404" style={{color:"maroon"}}>+79137870404</a> </strong>
         </div>
       </div>
