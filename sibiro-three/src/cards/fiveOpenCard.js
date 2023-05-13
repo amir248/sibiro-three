@@ -55,8 +55,8 @@ class FiveOpenCard extends Component {
       <React.Fragment>
       <p id="fiveEl">
         <img src={FiveImg} alt="img"/>
-        <p style={{margin:'3%',fontSize:"20px"}}>Мебель для гостиной на заказ</p>
-        <p style={{margin:'3%',fontSize:"20px"}}>Гостиные от эконом до премиум класса! Свое производство. Фурнитура из Европы. Можем пригласить на производство. Посмотрите видео о производстве.</p>
+        <p style={{margin:'3%',fontSize:"20px",maxWidth:'100%',width:"900px"}}>Мебель для гостиной на заказ</p>
+        <p style={{margin:'3%',fontSize:"20px",maxWidth:'100%',width:"900px"}}>Гостиные от эконом до премиум класса! Свое производство. Фурнитура из Европы. Можем пригласить на производство. Посмотрите видео о производстве.</p>
         <span id='ClosedFive'>X</span>
       </p>
         <button onClick={()=>this.handleClickFive()}>Описание</button>
