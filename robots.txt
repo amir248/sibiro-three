@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
+Host: https://sibiro.ru
+Sitemap: https://sibiro.ru/site/sitemap.xml
 User-agent: *
 Disallow:
