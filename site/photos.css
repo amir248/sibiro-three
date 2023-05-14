@@ -1,0 +1,100 @@
+*{
+  margin:0;
+}
+body{
+  background: grey;
+}
+main{
+  display:flex;
+  justify-content:center;
+  align-items:baseline;
+  flex-wrap: wrap;
+  width:100%;
+  /* max-width: 1300px; */
+}
+img{
+  width:100%;
+  /* max-width: 367px; */
+  max-width: 90px;
+}
+#boxOne{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  width:100%;
+  /* max-width: 1300px; */
+}
+#boxTwo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  width:100%;
+  /* max-width: 1300px; */
+}
+#boxThree{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  width:100%;
+  /* max-width: 1300px; */
+}
+h1{
+  width:100%;
+  background: yellow;
+  max-width: 100%;
+  text-align: center;
+}
+h2{
+  width:100%;
+  background: green;
+  max-width: 100%;
+  text-align: center;
+}
+h2:nth-child(2){
+  width:100%;
+  background: yellow;
+  max-width: 100%;
+  text-align: center;
+}
+#glav{
+  /* max-height: 100vh; */
+  /* height:700px; */
+  max-width:100%;
+}
+#ooK{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.left{
+  text-align: center;
+  width:50%;
+  font-size:50px;
+}
+.left:hover{
+  color:green;
+}
+.right{
+  text-align: center;
+  width:50%;
+  font-size: 50px;
+}
+.right:hover{
+  color:violet;
+}
+hr{
+  width:100%;
+}
+article{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:100%;
+  /* max-width: 1500px; */
+  flex-wrap: wrap;
+}

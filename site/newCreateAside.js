@@ -1,11 +1,12 @@
-let pageList=`<a href="#" style="margin:1%">Верх<span style="font-size:30px;">👆</span></a><a href="https://sibiro.ru" style="margin:1%"><span style="font-size:30px;">🏡</span>главная</a>
-<a href="https://sibiro.ru/design.html" style="margin:1%">DESIGN</a>
-<a href="https://sibiro.ru/footprint.html" style="margin:1%">FOOTPRINT</a>
-<a href="https://sibiro.ru/made.html" style="margin:1%">MADE</a>
-<a href="https://sibiro.ru/wood.html" style="margin:1%">WOOD</a>
-<a href="https://sibiro.ru/maps.html" style="margin:1%">Map</a>
+let pageList=`<a href="#" style="margin-top:2%;margin-bottom:1%">Верх<span style="font-size:30px;">👆</span></a><a href="https://sibiro.ru" style="margin-top:2%"><span style="font-size:30px;">🏡</span>главная</a>
+<a href="design.html" style="margin-top:2%;margin-bottom:1%">DESIGN</a>
+<a href="footprint.html" style="margin-top:2%;margin-bottom:1%"><span style="font-size:15px;">FOOTPRINT</span></a>
+<a href="made.html" style="margin-top:2%;margin-bottom:1%">MADE</a>
+<a href="wood.html" style="margin-top:2%;margin-bottom:1%">WOOD</a>
+<a href="maps.html" style="margin-top:2%;margin-bottom:1%">Map</a>
+<a href="photo.html" style="margin-top:2%;margin-bottom:1%">Photo</a>
 `;
-if(window.innerWidth>1100){
+if(window.innerWidth>1000){
   console.log(">1100");
   let aside=document.createElement('aside');
   let main=document.querySelector('main');
@@ -19,7 +20,7 @@ if(window.innerWidth>1100){
   position:sticky;
   justify-content: flex-start;
   align-items: center;
-  width:200px;
+  width:100px;
   // background: rgba(0,255,0,0.3);
   height:150px;
   max-width: 100%;
