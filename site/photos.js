@@ -83,6 +83,7 @@ function countPhoto(){
 countPhoto();
 glavPhoto();// рандомное фото после певой выкладки галереи
 
+
 function newsPic(){
   for(let oj=0;oj<newPic.length;oj++){
     let ok=document.createElement('img');
@@ -190,6 +191,63 @@ function buttonsy(){
   });
 }
 buttonsy();
+
+//ССылка на сайт Sibiro
+const leftThree=document.createElement('span');
+leftThree.innerHTML='<span style="font-size:30px;">>&nbsp</span>';
+document.querySelector('#ooK').append(leftThree);
+
+const leftTwo=document.createElement('span');
+leftTwo.innerHTML='<span style="font-size:20px;">>&nbsp</span>';
+document.querySelector('#ooK').append(leftTwo);
+
+const left=document.createElement('span');
+left.innerHTML='>&nbsp';
+document.querySelector('#ooK').append(left);
+
+const site = document.createElement('a');
+site.innerHTML=`<a href='https://sibiro.ru/'><span style="font-size:30px">Sibiro</span></a>`;
+document.querySelector('#ooK').append(site);
+
+const right=document.createElement('span');
+right.innerHTML='&nbsp<';
+document.querySelector('#ooK').append(right);
+
+const rightTwo=document.createElement('span');
+rightTwo.innerHTML='<span style="font-size:20px;">&nbsp<</span>';
+document.querySelector('#ooK').append(rightTwo);
+
+const rightThree=document.createElement('span');
+rightThree.innerHTML='<span style="font-size:30px;">&nbsp<</span>';
+document.querySelector('#ooK').append(rightThree);
+
+//Left signal
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(6)').style.cssText=`color:red;`;},300);
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(6)').style.cssText=`color:black;`;},600);
+
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(7) > span').style.cssText=`color:red;`;},350);
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(7) > span').style.cssText=`color:black;`;},700);
+
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(8)').style.cssText=`color:red;`;},400);
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(8)').style.cssText=`color:black;`;},800);
+
+//site --------------------Site!
+setInterval(()=>{document.querySelector('#ooK > a').style.cssText=`color:red;background:rgba(0,255,0,0.3);border-radius:7px;`},1000);
+setInterval(()=>{document.querySelector('#ooK > a > a > span').style.cssText=`color:red;font-size:30px;`},1000);
+setInterval(()=>{document.querySelector('#ooK > a > a > span').style.cssText=`color:green;font-size:30px;`},2000);
+setInterval(()=>{document.querySelector('#ooK > a').style.cssText=`color:red;background:none;border-radius:7px;`},2000);
+
+//Right signal
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(10)').style.cssText=`color:red;`;},300);
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(10)').style.cssText=`color:black;`;},600);
+
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(11) > span').style.cssText=`color:red;font-size:20px;`;},350);
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(11) > span').style.cssText=`color:black;font-size:20px;`;},700);
+
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(12) > span').style.cssText=`color:red;font-size:30px;`;},400);
+setInterval(()=>{document.querySelector('#ooK > span:nth-child(12) > span').style.cssText=`color:black;font-size:30px;`;},800);
+// document.querySelector('#ooK > span:nth-child(6)').style.cssText=`color:black;`
+
 
 let width=window.innerWidth;
 console.log(width);
