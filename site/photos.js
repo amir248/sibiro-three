@@ -231,7 +231,7 @@ setInterval(()=>{document.querySelector('#ooK > span:nth-child(7) > span').style
 setInterval(()=>{document.querySelector('#ooK > span:nth-child(8)').style.cssText=`color:red;`;},400);
 setInterval(()=>{document.querySelector('#ooK > span:nth-child(8)').style.cssText=`color:black;`;},800);
 
-//site --------------------Site!
+//site --------------------Site! LOL-LOL-LOL
 setInterval(()=>{document.querySelector('#ooK > a').style.cssText=`color:red;background:rgba(0,255,0,0.3);border-radius:7px;`},1000);
 setInterval(()=>{document.querySelector('#ooK > a > a > span').style.cssText=`color:red;font-size:30px;`},1000);
 setInterval(()=>{document.querySelector('#ooK > a > a > span').style.cssText=`color:green;font-size:30px;`},2000);
@@ -247,7 +247,6 @@ setInterval(()=>{document.querySelector('#ooK > span:nth-child(11) > span').styl
 setInterval(()=>{document.querySelector('#ooK > span:nth-child(12) > span').style.cssText=`color:red;font-size:30px;`;},400);
 setInterval(()=>{document.querySelector('#ooK > span:nth-child(12) > span').style.cssText=`color:black;font-size:30px;`;},800);
 // document.querySelector('#ooK > span:nth-child(6)').style.cssText=`color:black;`
-
 
 let width=window.innerWidth;
 console.log(width);
