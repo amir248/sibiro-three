@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sibiro-three/static/css/main.d7aaf91b.css",
-    "main.js": "/sibiro-three/static/js/main.ed392c41.js",
+    "main.css": "/sibiro-three/static/css/main.f75f8513.css",
+    "main.js": "/sibiro-three/static/js/main.573053e1.js",
     "static/js/787.f704e224.chunk.js": "/sibiro-three/static/js/787.f704e224.chunk.js",
     "static/media/v3.mp4": "/sibiro-three/static/media/v3.baccd06b2b7a0bd1174d.mp4",
     "static/media/mod.JPG": "/sibiro-three/static/media/mod.1320a5884f3b0d06446a.JPG",
@@ -88,12 +88,12 @@
     "static/media/yr1.jpg": "/sibiro-three/static/media/yr1.ac1bf38bbcc23e1f3b44.jpg",
     "static/media/yr7.jpg": "/sibiro-three/static/media/yr7.06dee637b7ff5f4add90.jpg",
     "index.html": "/sibiro-three/index.html",
-    "main.d7aaf91b.css.map": "/sibiro-three/static/css/main.d7aaf91b.css.map",
-    "main.ed392c41.js.map": "/sibiro-three/static/js/main.ed392c41.js.map",
+    "main.f75f8513.css.map": "/sibiro-three/static/css/main.f75f8513.css.map",
+    "main.573053e1.js.map": "/sibiro-three/static/js/main.573053e1.js.map",
     "787.f704e224.chunk.js.map": "/sibiro-three/static/js/787.f704e224.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7aaf91b.css",
-    "static/js/main.ed392c41.js"
+    "static/css/main.f75f8513.css",
+    "static/js/main.573053e1.js"
   ]
 }
